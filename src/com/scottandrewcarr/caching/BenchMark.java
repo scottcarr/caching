@@ -1,5 +1,8 @@
+package com.scottandrewcarr.caching;
+
 import org.apache.jcs.JCS;
 import org.apache.jcs.access.exception.CacheException;
+
 public class BenchMark {
     private static JCS cache;
     private static long t0, t1, longest;
