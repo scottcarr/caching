@@ -7,11 +7,12 @@ public class BenchMark {
     private static JCS cache;
     private static long t0, t1, longest;
     private static long average;
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         try {
             cache = JCS.getInstance("cache");
         } catch (Exception e) {
             System.out.println("Error getting cache instance");
+            throw e;
         }
         try {
             // fill the cache with junk
