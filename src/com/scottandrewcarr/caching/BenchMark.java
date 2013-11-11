@@ -17,16 +17,16 @@ public class BenchMark {
         try {
             // fill the cache with junk
             for (int i = 0; i < 106; i++) {
-                cache.put(i, new Entry("world"));
+                cache.put(i, new Entry());
             }
             // read from the cache at random
             average = 0;
             longest = 0;
-            for (int i = 0; i < 10000; i++) {
+            for (int i = 0; i < 100000; i++) {
                 t0 = System.nanoTime();
                 //if (i==33333345) {
                 if ((i%10000)==0) {
-                    cache.put(i%106, new Entry("world"));
+                    cache.put(i%106, new Entry());
                 }
                 Entry e = (Entry) cache.get(i%106);
                 t1 = System.nanoTime();
