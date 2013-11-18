@@ -2,7 +2,7 @@
 
 jcs.default=
 jcs.default.cacheattributes=org.apache.jcs.engine.CompositeCacheAttributes
-jcs.default.cacheattributes.MaxObjects=106
+jcs.default.cacheattributes.MaxObjects=100
 jcs.default.cacheattributes.MemoryCacheName=org.apache.jcs.engine.memory.lru.LRUMemoryCache
 jcs.default.cacheattributes.UseDisk=false
 jcs.default.cacheattributes.UseRemote=false

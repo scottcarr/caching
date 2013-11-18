@@ -18,4 +18,9 @@ public class Entry implements Serializable {
         // data not being used
         return data[n];
     }
+    public Entry(double std_norm_sample, double size_mean, double size_variance) {
+        double scaled = size_mean + std_norm_sample*size_variance;
+        int size = (int)Math.round(scaled);
+        data = new byte[size];
+    }
 }
